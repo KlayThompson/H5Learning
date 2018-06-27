@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>circle</title>
+</head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
+	您的浏览器不支持HTML5 canvas标签。
+</canvas>
+
+<script type="text/javascript">
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(95,50,40,0,2*Math.PI);
+	ctx.stroke();
+</script>
+
+</body>
+</html>

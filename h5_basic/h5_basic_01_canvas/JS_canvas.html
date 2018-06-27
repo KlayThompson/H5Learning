@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UseJS_Canvas</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3;">
+	您的浏览器不支持HTML5 canvas标签。
+</canvas>
+
+<script type="text/javascript">
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	ctx.fillStyle="#ff0000";
+	ctx.fillRect(0,0,150,75);
+</script>
+</body>
+</html>
