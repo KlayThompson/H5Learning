@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.div{
+			width: 500px;
+			height: 800px;
+			margin: 20px auto;
+			padding: 20px;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+
+<div class="div">
+	<button onclick="playPause()">播放/暂停</button>
+	<button onclick="makeBig()">放大</button>
+	<button onclick="makeSmall()">缩小</button>
+	<button onclick="makeNormal()">普通</button>
+	<br><br>
+	<video id="video1" width="320">
+		<source src="../h5_basic_01_canvas/video.mp4" type="video/mp4">
+		您的浏览器不支持HTML5 Video标签。
+	</video>
+</div>
+
+<script type="text/javascript">
+		var myVideo = document.getElementById("video1");
+		function playPause() {
+			if (myVideo.paused) {
+				myVideo.play()
+			} else {
+				myVideo.pause()
+			}
+		}
+		function makeBig() {
+			myVideo.width=400;
+		}
+		function makeSmall() {
+			myVideo.width=200;
+		}
+		function makeNormal() {
+			myVideo.width=320;
+		}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>存储</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<div id="result"></div>
+
+<script type="text/javascript">
+	if (typeof(Storage) !== "undefined") {
+		localStorage.sitename="菜鸟起飞";
+		document.getElementById("result").innerHTML="网站名："+localStorage.sitename;
+	} else {
+		document.getElementById("result").innerHTML="对不起，您的浏览器不支持 web 存储。";
+	}
+</script>
+
+</body>
+</html>
